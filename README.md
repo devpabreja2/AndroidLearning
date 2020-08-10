@@ -1,3 +1,3 @@
 # Learning Android
 
-Learning the basics of android, currently worked on Activities, Android Layout(User Interface) , Intent and Intent Filters.
+Learning all the basics of android based on the Android Learning Roadmap Trello Board.
