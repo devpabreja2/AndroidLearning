@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/activity"
+            android:layout_width="337dp"
+            android:layout_height="46dp"
+            android:onClick="onActivityClick"
+            android:text="Activity"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.061" />
+
+        <Button
+            android:id="@+id/intent"
+            android:layout_width="337dp"
+            android:layout_height="46dp"
+            android:onClick="onIntentClick"
+            android:text="Intent and Intent Filters"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity"
+            app:layout_constraintVertical_bias="0.03" />
+
+        <Button
+            android:id="@+id/fragment"
+            android:layout_width="337dp"
+            android:layout_height="46dp"
+            android:onClick="onFragmentClick"
+            android:text="Fragments"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/intent"
+            app:layout_constraintVertical_bias="0.03" />
+
+        <Button
+            android:id="@+id/broadcastreceiver"
+            android:layout_width="337dp"
+            android:layout_height="46dp"
+            android:onClick="onBroadcastClick"
+            android:text="Broadcast Receiver and Service"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment"
+            app:layout_constraintVertical_bias="0.03" />
+
+        <Button
+            android:id="@+id/contentprovider"
+            android:layout_width="337dp"
+            android:layout_height="46dp"
+            android:onClick="onContentProviderClick"
+            android:text="Content Provider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/broadcastreceiver"
+            app:layout_constraintVertical_bias="0.03" />
+
+        <Button
+            android:id="@+id/okhttp"
+            android:layout_width="337dp"
+            android:layout_height="46dp"
+            android:onClick="onOkHttpClick"
+            android:text="OkHttp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contentprovider"
+            app:layout_constraintVertical_bias="0.03" />
+
+        <Button
+            android:id="@+id/retrofit"
+            android:layout_width="337dp"
+            android:layout_height="46dp"
+            android:onClick="onRetrofitClick"
+            android:text="Retrofit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/okhttp"
+            app:layout_constraintVertical_bias="0.03" />
+
+        <Button
+            android:id="@+id/viewpager"
+            android:layout_width="337dp"
+            android:layout_height="46dp"
+            android:onClick="onViewPagerClick"
+            android:text="Viewpager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/retrofit"
+            app:layout_constraintVertical_bias="0.03" />
+
+        <Button
+            android:id="@+id/recyclerview"
+            android:layout_width="337dp"
+            android:layout_height="46dp"
+            android:onClick="onRecyclerViewClick"
+            android:text="RecyclerView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewpager"
+            app:layout_constraintVertical_bias="0.03" />
+
+        <Button
+            android:id="@+id/bottomsheet"
+            android:layout_width="337dp"
+            android:layout_height="46dp"
+            android:onClick="onBottomSheetClick"
+            android:text="BottomSheet"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerview"
+            app:layout_constraintVertical_bias="0.03" />
+
+        <Button
+            android:id="@+id/threads"
+            android:layout_width="337dp"
+            android:layout_height="46dp"
+            android:onClick="onThreadsClick"
+            android:text="Threads"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bottomsheet"
+            app:layout_constraintVertical_bias="0.03" />
+
+        <Button
+            android:id="@+id/storage"
+            android:layout_width="337dp"
+            android:layout_height="46dp"
+            android:onClick="onStorageClick"
+            android:text="Internal Storage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/threads"
+            app:layout_constraintVertical_bias="0.03" />
+
+        <Button
+            android:id="@+id/sharedpreferences"
+            android:layout_width="337dp"
+            android:layout_height="46dp"
+            android:onClick="onSharedPreferencesClick"
+            android:text="Shared Preferences"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/storage"
+            app:layout_constraintVertical_bias="0.03" />
+
+        <Button
+            android:id="@+id/sqlite"
+            android:layout_width="337dp"
+            android:layout_height="46dp"
+            android:onClick="onSQLiteClick"
+            android:text="SQLite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sharedpreferences"
+            app:layout_constraintVertical_bias="0.03" />
+
+        <Button
+            android:id="@+id/rxjava"
+            android:layout_width="337dp"
+            android:layout_height="46dp"
+            android:onClick="onRxJavaClick"
+            android:text="RxJava"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sqlite"
+            app:layout_constraintVertical_bias="0.03" />
+
+
+        <Button
+            android:id="@+id/dagger"
+            android:layout_width="337dp"
+            android:layout_height="46dp"
+            android:onClick="onDaggerClick"
+            android:text="Dagger"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rxjava"
+            app:layout_constraintVertical_bias="0.03" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
